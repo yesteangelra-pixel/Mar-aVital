@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import mariaImg from "@/assets/maria-vital.jpg";
+import heroImg from "@/assets/ig-post-2.jpg";
 
 export const Route = createFileRoute("/acompanamiento")({
   head: () => ({
@@ -28,28 +28,17 @@ function Acompanamiento() {
     <>
       {/* HERO */}
       <section className="bg-gradient-pale">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 grid gap-14 md:grid-cols-[5fr_6fr] items-center">
-          <div className="relative aspect-square rounded-[2rem] overflow-hidden shadow-elegant">
-            <img
-              src={mariaImg}
-              alt="María Vital, terapeuta holística y kinesióloga"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 grid gap-14 md:grid-cols-[6fr_5fr] items-center">
           <div>
             <span className="eyebrow">Acompañamiento holístico</span>
-            <h1 className="mt-3 font-display text-5xl md:text-6xl">Tu cuerpo tiene un mensaje</h1>
-            <p className="mt-3 font-display text-2xl italic text-forest">
-              "Deja de tratar los síntomas. Empieza a escuchar los mensajes."
-            </p>
-            <p className="mt-7 text-foreground/80 leading-relaxed">
-              Trabajo la conexión entre el <strong>sistema digestivo</strong> y las{" "}
-              <strong>emociones</strong>. Acompaño a personas que llevan tiempo con molestias que nadie
-              termina de explicar, y que intuyen que su estrés y sus emociones tienen mucho que ver con
-              cómo está su barriga.
-            </p>
-            <p className="mt-4 text-foreground/80 leading-relaxed">
-              El cuerpo no miente. El cuerpo no dramatiza. El cuerpo simplemente avisa.
+            <h1 className="mt-3 font-display text-5xl md:text-6xl">
+              Tu cuerpo recuerda lo que tu mente intentó olvidar.
+            </h1>
+            <p className="mt-6 text-foreground/80 leading-relaxed">
+              Las emociones no procesadas no desaparecen. Se instalan en el cuerpo y esperan.
+              Trabajo la conexión profunda entre tus <strong>emociones</strong> y tu{" "}
+              <strong>sistema digestivo</strong> para que por fin puedas escuchar lo que tu cuerpo
+              lleva tiempo diciéndote.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
@@ -68,25 +57,80 @@ function Acompanamiento() {
               </Link>
             </div>
           </div>
+          <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-elegant">
+            <img
+              src={heroImg}
+              alt="Acompañamiento holístico con María Vital"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
-      {/* SÍNTOMAS / DOLOR */}
+      {/* DOLOR — frases virales */}
       <section className="mx-auto max-w-5xl px-6 lg:px-8 py-20">
-        <span className="eyebrow">¿Te suena?</span>
+        <span className="eyebrow">¿Reconoces esto?</span>
         <h2 className="mt-3 font-display text-4xl md:text-5xl">
-          ¿Sientes que tu cuerpo te pone obstáculos constantemente?
+          Hinchazón, fatiga, mal humor, insomnio.
         </h2>
-        <p className="mt-6 text-foreground/80 leading-relaxed max-w-3xl">
-          Hinchazón, malestar digestivo, fatiga, cambios de humor, insomnio, dolores que no ceden…
-          Síntomas que los médicos no terminan de explicar y que van robándote energía y calidad de vida.
-        </p>
         <p className="mt-4 font-display text-2xl italic text-forest">
-          Tu intestino no está roto. Está agotado. Hay diferencia.
+          Tu médico dice que estás bien. Tú sabes que no.
         </p>
+        <p className="mt-6 text-foreground/80 leading-relaxed max-w-3xl">
+          Llevas años diciéndole a tu cuerpo que aguante. Comer bien no es suficiente si tu sistema
+          nervioso está en alerta permanente. Cada síntoma crónico es una conversación pendiente con
+          tu cuerpo.
+        </p>
+        <div className="mt-8 rounded-2xl bg-card border border-border p-8 shadow-soft">
+          <p className="font-display text-2xl text-forest">Tu intestino no está roto. Está agotado.</p>
+          <p className="mt-3 text-foreground/80 leading-relaxed">
+            Hay diferencia. Y esa diferencia lo cambia todo: ya no se trata de aguantar mejor, sino de
+            entender qué está pasando y por qué tu cuerpo te está mandando esa señal.
+          </p>
+        </div>
       </section>
 
-      {/* SERVICIOS */}
+      {/* 3 COSAS QUE NADIE TE CUENTA */}
+      <section className="bg-forest-deep text-primary-foreground">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <span className="text-[0.7rem] tracking-[0.18em] uppercase font-semibold text-leaf">Conexión intestino-cerebro</span>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl text-primary-foreground">
+              3 cosas que nadie te cuenta
+            </h2>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                num: "01",
+                title: "El 90% de tu serotonina se produce en el intestino",
+                body: "No en el cerebro. Por eso cuando estás mal de la barriga, estás mal de la cabeza. Y al revés. Son el mismo sistema.",
+              },
+              {
+                num: "02",
+                title: "El estrés cambia tu microbiota en menos de 72 horas",
+                body: "Tu sistema nervioso y tu intestino hablan constantemente a través del nervio vago. Cuando tu mente entra en modo supervivencia, tu barriga lo nota de inmediato.",
+              },
+              {
+                num: "03",
+                title: "Las emociones no expresadas viven en el intestino",
+                body: "Tu intestino tiene más neuronas que la médula espinal. Lleva el registro de todo lo que no has dicho, lo que no has procesado, lo que has aguantado.",
+              },
+            ].map(item => (
+              <div key={item.num} className="rounded-2xl bg-white/8 border border-white/15 p-8">
+                <div className="font-display text-5xl text-leaf/60">{item.num}</div>
+                <h3 className="mt-4 font-display text-xl text-primary-foreground">{item.title}</h3>
+                <p className="mt-3 text-sm text-primary-foreground/70 leading-relaxed">{item.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-10 text-center font-display text-xl italic text-leaf">
+            "El estrés no solo te afecta la cabeza. Le dice a tu intestino que entre en modo supervivencia. Y eso duele."
+          </p>
+        </div>
+      </section>
+
+      {/* CÓMO TRABAJO */}
       <section className="bg-gradient-pale">
         <div className="mx-auto max-w-6xl px-6 lg:px-8 py-20">
           <span className="eyebrow">🌿 Cómo trabajo</span>
@@ -95,7 +139,7 @@ function Acompanamiento() {
             {[
               {
                 t: "Emociones e intestino",
-                d: "Trabajo el vínculo entre tus emociones no procesadas y tus problemas intestinales. El 90% de la serotonina se fabrica en el intestino.",
+                d: "Trabajo el vínculo entre tus emociones no procesadas y tus problemas intestinales. El cuerpo no miente. El cuerpo simplemente avisa.",
               },
               {
                 t: "Kinesiología aplicada",
@@ -119,38 +163,12 @@ function Acompanamiento() {
         </div>
       </section>
 
-      {/* A QUIÉN AYUDO */}
-      <section className="mx-auto max-w-5xl px-6 lg:px-8 py-20">
-        <span className="eyebrow">🔍 A quién ayudo</span>
-        <h2 className="mt-3 font-display text-4xl md:text-5xl">¿Es para ti?</h2>
-        <p className="mt-6 text-foreground/80 leading-relaxed">
-          Personas que llevan tiempo con molestias digestivas sin encontrar una solución definitiva. Que
-          sienten que sus emociones y su estrés tienen que ver con cómo está su barriga. Que quieren ir
-          más allá del síntoma y entender qué hay detrás.
-        </p>
-        <div className="mt-10 rounded-2xl border border-border bg-card p-8 shadow-soft">
-          <p className="font-display text-2xl text-forest">¿El resultado?</p>
-          <p className="mt-3 text-foreground/80 leading-relaxed">
-            No se trata de aguantar mejor el malestar. Se trata de entender qué te quiere decir tu cuerpo
-            para que tengas <strong>total libertad</strong> de decidir qué hacer con tu vida.
-          </p>
-        </div>
-      </section>
-
-      {/* STATS */}
-      <section className="mx-auto max-w-5xl px-6 lg:px-8 pb-20">
-        <div className="grid gap-10 md:grid-cols-3">
-          {[
-            { n: "10+", l: "años acompañando" },
-            { n: "100%", l: "enfoque personalizado" },
-            { n: "∞", l: "potencial por desplegar" },
-          ].map(s => (
-            <div key={s.l} className="text-center rounded-2xl bg-card border border-border p-8 shadow-soft">
-              <div className="font-display text-5xl text-forest">{s.n}</div>
-              <div className="mt-2 text-sm uppercase tracking-widest text-muted-foreground">{s.l}</div>
-            </div>
-          ))}
-        </div>
+      {/* QUOTE */}
+      <section className="mx-auto max-w-4xl px-6 lg:px-8 py-20 text-center">
+        <blockquote className="font-display text-3xl md:text-4xl italic text-forest-deep leading-snug">
+          "Una sesión no te arregla. Te muestra el camino. Tú decides si caminar."
+        </blockquote>
+        <p className="mt-4 text-sm text-muted-foreground">— María Vital</p>
       </section>
 
       {/* CTA */}

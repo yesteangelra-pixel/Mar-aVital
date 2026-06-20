@@ -1,11 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import mariaImg from "@/assets/maria-vital.jpg";
-import igPost1 from "@/assets/ig-thumb-1.jpg";
-import igPost2 from "@/assets/ig-thumb-2.jpg";
-import igPost3 from "@/assets/ig-thumb-3.jpg";
-import igPost4 from "@/assets/ig-thumb-4.jpg";
-import igPost5 from "@/assets/ig-thumb-5.jpg";
-import igPost6 from "@/assets/ig-thumb-6.jpg";
 import { Testimonials } from "@/components/Testimonials";
 
 export const Route = createFileRoute("/sobre")({
@@ -65,19 +59,24 @@ function Sobre() {
         </div>
       </section>
 
-      {/* Síntomas / dolor del cliente */}
+      {/* Mi historia */}
       <section className="mx-auto max-w-5xl px-6 lg:px-8 py-20">
-        <span className="eyebrow">¿Te suena?</span>
+        <span className="eyebrow">Mi historia</span>
         <h2 className="mt-3 font-display text-4xl md:text-5xl">
-          ¿Sientes que tu cuerpo te pone obstáculos constantemente?
+          Llegué aquí porque lo viví.
         </h2>
         <p className="mt-6 text-foreground/80 leading-relaxed max-w-3xl">
-          Hinchazón, malestar digestivo, diarreas, estreñimiento, dolores que no ceden, cambios de
-          humor, insomnio… Síntomas que los médicos no terminan de explicar y que van robándote
-          energía y calidad de vida.
+          Durante años conviví con síntomas que nadie sabía explicar. Fue el camino de comprenderlos
+          — desde dentro — lo que me llevó al bienestar holístico, a la kinesiología y a los aceites
+          esenciales doTERRA. No como teoría, sino como práctica diaria que transformó mi vida.
         </p>
-        <p className="mt-4 font-display text-2xl italic text-forest">
-          Te entiendo. Yo también lo viví.
+        <p className="mt-4 text-foreground/80 leading-relaxed max-w-3xl">
+          Llevo más de 10 años acompañando a personas que viven lo mismo que yo viví: ese momento
+          en que decides dejar de aguantar y empiezas a escuchar. Ese es el punto de partida de todo
+          lo que hago.
+        </p>
+        <p className="mt-6 font-display text-2xl italic text-forest">
+          Hoy acompaño a otros a recorrer ese mismo camino.
         </p>
       </section>
 

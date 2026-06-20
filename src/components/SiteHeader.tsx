@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import logoLoto from "@/assets/ChatGPT Image 3 jun 2026, 11_25_08.png";
 
 const nav = [
+  { to: "/", label: "Inicio" },
   { to: "/sobre", label: "Sobre María" },
   { to: "/acompanamiento", label: "Acompañamiento" },
   { to: "/aromaterapia", label: "Aromaterapia" },
@@ -41,8 +42,9 @@ export function SiteHeader() {
           </a>
         </nav>
 
-        <button className="lg:hidden p-2" onClick={() => setOpen(!open)} aria-label="Menú">
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        <button className="lg:hidden flex items-center gap-1.5 px-2 py-2 text-foreground/70" onClick={() => setOpen(!open)} aria-label={open ? "Cerrar menú" : "Abrir menú"}>
+          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          <span className="text-[0.65rem] uppercase tracking-widest font-medium">{open ? "Cerrar" : "Menú"}</span>
         </button>
       </div>
 

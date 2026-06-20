@@ -16,10 +16,11 @@ export function SiteFooter() {
         <div>
           <h4 className="text-primary-foreground text-sm font-semibold uppercase tracking-widest">Explora</h4>
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/80">
-            <li><Link to="/aromaterapia" className="hover:text-leaf">Aromaterapia</Link></li>
-            <li><Link to="/productos" className="hover:text-leaf">Catálogo doTERRA</Link></li>
-            <li><Link to="/formaciones" className="hover:text-leaf">Formaciones</Link></li>
+            <li><Link to="/" className="hover:text-leaf">Inicio</Link></li>
             <li><Link to="/sobre" className="hover:text-leaf">Sobre María</Link></li>
+            <li><Link to="/acompanamiento" className="hover:text-leaf">Acompañamiento</Link></li>
+            <li><Link to="/aromaterapia" className="hover:text-leaf">Aromaterapia</Link></li>
+            <li><Link to="/contacto" className="hover:text-leaf">Contacto</Link></li>
           </ul>
         </div>
         <div>

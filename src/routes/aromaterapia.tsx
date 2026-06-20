@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Droplet, Sparkles, Heart, Wind, ArrowRight, Play, GraduationCap, Users } from "lucide-react";
 import advocateImg from "@/assets/doterra-wellness-advocate.png";
+import bottlesImg from "@/assets/doterra-bottles.png";
 
 const usos = [
   { icon: Wind, title: "Aromático", desc: "Difusión en el aire para crear ambientes que apoyan el ánimo, la concentración o el descanso." },
@@ -94,11 +95,13 @@ function Aromaterapia() {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img
-              src={advocateImg}
-              alt="dōTERRA Wellness Advocate"
-              className="w-full max-w-sm drop-shadow-2xl"
-            />
+            <div className="relative w-full max-w-md aspect-[4/3] rounded-[2rem] overflow-hidden shadow-elegant">
+              <img
+                src={bottlesImg}
+                alt="Aceites esenciales doTERRA On Guard, Melaleuca y Lavanda"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -151,6 +154,15 @@ function Aromaterapia() {
           </div>
         </div>
       </section>
+
+      {/* BRIDGE FORMACIONES */}
+      <div className="bg-forest-deep py-14 text-center text-primary-foreground">
+        <span className="text-[0.7rem] tracking-[0.18em] uppercase font-semibold text-leaf">Centro de Formación · Espacio Vital Bienestar</span>
+        <h2 className="mt-3 font-display text-4xl text-primary-foreground">Aprende con María</h2>
+        <p className="mt-3 text-primary-foreground/70 max-w-xl mx-auto leading-relaxed">
+          Clases temáticas abiertas sobre aceites esenciales y una ruta de 7 pasos para líderes vitales doTERRA.
+        </p>
+      </div>
 
       {/* FORMACIONES */}
       <section className="mx-auto max-w-7xl px-6 lg:px-8 py-20" id="formaciones">

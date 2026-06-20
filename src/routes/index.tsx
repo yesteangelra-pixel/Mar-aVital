@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Leaf, GraduationCap, HeartHandshake } from "lucide-react";
 import heroImg from "@/assets/hero-fern.png";
 import mariaImg from "@/assets/maria-vital.jpg";
+import mariaRisaImg from "@/assets/maria-risa.jpg";
 import { Testimonials } from "@/components/Testimonials";
 import igPost1 from "@/assets/ig-thumb-1.jpg";
 import igPost2 from "@/assets/ig-thumb-2.jpg";
@@ -28,26 +29,33 @@ function Home() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden min-h-[66vh] flex items-center">
-        <img src={heroImg} alt="" className="absolute inset-0 h-full w-full object-cover object-center opacity-55" />
-        <div className="absolute inset-0 bg-gradient-to-r from-cream/95 via-cream/80 to-cream/10" />
-        <div className="relative w-full mx-auto max-w-7xl px-6 lg:px-8 py-20 lg:py-0">
-          <div className="max-w-2xl">
-            <span className="eyebrow">HOLÍSTICO · AROMATERAPIA · DOTERRA</span>
-            <h1 className="mt-5 font-display text-[2.7rem] md:text-[4.3rem] leading-[1.02] text-forest-deep">
-              Bienestar que fluye.<br />
-              Naturaleza que sana.<br />
-              <span className="text-leaf italic">Liderazgo con propósito.</span>
-            </h1>
-            <p className="mt-8 text-lg text-foreground/70 max-w-xl leading-relaxed">
-              Sesiones holísticas y aromaterapia con aceites esenciales doTERRA puros y certificados. Catálogo completo, formaciones y acompañamiento personal para que conectes con tu potencial.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link to="/productos" className="inline-flex items-center gap-2 rounded-full bg-forest text-primary-foreground px-8 py-4 text-base font-medium hover:bg-forest-deep transition-colors shadow-elegant">
-                Explorar productos <ArrowRight className="h-4 w-4" />
-              </Link>
-              <a href="https://wa.me/34671724828?text=Hola%20María%2C%20quiero%20reservar%20una%20sesión" target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full border-2 border-forest text-forest px-8 py-4 text-base font-medium hover:bg-forest hover:text-primary-foreground transition-colors">
-                Reservar sesión
-              </a>
+        <img src={heroImg} alt="" className="absolute inset-0 h-full w-full object-cover object-center opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-cream/98 via-cream/90 to-cream/30" />
+        <div className="relative w-full mx-auto max-w-7xl px-6 lg:px-8 py-20">
+          <div className="grid md:grid-cols-[3fr_2fr] gap-12 items-center">
+            <div>
+              <span className="eyebrow">HOLÍSTICO · AROMATERAPIA · DOTERRA</span>
+              <h1 className="mt-5 font-display text-[2.7rem] md:text-[4.3rem] leading-[1.02] text-forest-deep">
+                Bienestar que fluye.<br />
+                Naturaleza que sana.<br />
+                <span className="text-leaf italic">Liderazgo con propósito.</span>
+              </h1>
+              <p className="mt-8 text-lg text-foreground/70 max-w-xl leading-relaxed">
+                Sesiones holísticas y aromaterapia con aceites esenciales doTERRA puros y certificados. Catálogo completo, formaciones y acompañamiento personal para que conectes con tu potencial.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-4">
+                <Link to="/acompanamiento" className="inline-flex items-center gap-2 rounded-full bg-forest text-primary-foreground px-8 py-4 text-base font-medium hover:bg-forest-deep transition-colors shadow-elegant">
+                  Descubrir cómo trabajo <ArrowRight className="h-4 w-4" />
+                </Link>
+                <a href="https://wa.me/34671724828?text=Hola%20María%2C%20quiero%20reservar%20una%20sesión" target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full border-2 border-forest text-forest px-8 py-4 text-base font-medium hover:bg-forest hover:text-primary-foreground transition-colors">
+                  Reservar sesión
+                </a>
+              </div>
+            </div>
+            <div className="hidden md:flex justify-center items-center">
+              <div className="relative w-72 h-80 rounded-[2.5rem] overflow-hidden shadow-elegant">
+                <img src={mariaImg} alt="María Vital, terapeuta holística" className="absolute inset-0 h-full w-full object-cover object-top" />
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +93,7 @@ function Home() {
       <section className="bg-gradient-pale">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 grid gap-12 md:grid-cols-2 items-center">
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-elegant">
-            <img src={mariaImg} alt="María Vital" className="absolute inset-0 h-full w-full object-cover object-top" />
+            <img src={mariaRisaImg} alt="María Vital" className="absolute inset-0 h-full w-full object-cover object-center" />
           </div>
           <div>
             <span className="eyebrow">Sobre María</span>
